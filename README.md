@@ -124,9 +124,9 @@ redis-server
 4. 🛠 Backend Setup
 cd backend
 cp .env.example .env   # Create your own .env file
-# Edit .env with:
-# MONGODB_URI=
-# JWT_SECRET=
+ Edit .env with:
+MONGODB_URI=
+ JWT_SECRET=
 
 npm install
 npm i mongoose dotenv jsonwebtoken express bcrypt axios bullmq cors http ioredis socket.io
