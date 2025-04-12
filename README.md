@@ -136,6 +136,13 @@ npm i mongoose dotenv jsonwebtoken express bcrypt axios bullmq cors http ioredis
 
 npx nodemon
 
+5. Start the Worker
+  node jobs/Workers/retryWorker.js
+
+6.Simulation
+   node simulate-webhooks.js
+   
+
 
 ## Author 👨‍💻
 
