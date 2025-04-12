@@ -2,7 +2,7 @@
 
 This project allows users to subscribe to webhook services, and handles incoming webhook events with retry logic, authentication, and real-time event streaming.
 
-🚀 ## Tech Stack
+## Tech Stack 🚀
 Layer	Technology
 Frontend	React.js (Vite)
 Backend	Node.js with Express + MongoDB
@@ -10,7 +10,7 @@ Auth	JWT-based
 Realtime	Socket.io
 Queue System	BullMQ + Redis
 
-📦 Features
+## Features 📦
 ✅ Backend (Express.js + MongoDB)
 User Signup/Login with JWT Auth
 
@@ -33,7 +33,7 @@ View live event logs via Socket.io
 
 Auth-protected routes
 
-🧱 Architecture & Design Choices
+## Architecture & Design Choices 🧱
 1. Modular Service Layers
 Organized code into /routes, /controllers, /models, and /jobs
 
@@ -65,7 +65,7 @@ Simple, schema-flexible document store for subscriptions and events
 
 Easy to relate events to users and sources
 
-⚙️ Project Structure
+## Project Structure ⚙️
 bash
 Copy
 Edit
@@ -90,7 +90,7 @@ bash
 Copy
 Edit
 node simulate-webhook.js
-🧼 Future Improvements
+## Future Improvements 🧼
 UI: Add filters/sorting to event log
 
 DB: Add TTL/index cleanup for old events
@@ -99,7 +99,7 @@ Security: Validate callback URLs before accepting
 
 Retry: Add email alerts on repeated failures
 
-🛠 Setup Instructions
+## Setup Instructions 🛠
 Clone the repo
 
 Start MongoDB and Redis locally
@@ -110,7 +110,7 @@ cd frontend && npm install && npm run dev
 
 Use the React UI to sign up, login, and subscribe
 
-👨‍💻 Author
+## Author 👨‍💻
 Rohit Satpute
 📫 LinkedIn
 🌐 Portfolio
