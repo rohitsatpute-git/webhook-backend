@@ -92,6 +92,7 @@ Clone the repo
   cd webhook-backend
 
 2. 🗄️ Setup MongoDB
+
 Option 1: Local MongoDB
 
 Install MongoDB from: https://www.mongodb.com/try/download/community
@@ -110,6 +111,7 @@ Add your IP to the network access list
 Get your connection string and update the .env file in /backend
 
 3. 🔁 Setup Redis (For Retry Queue)
+
 Install Redis:
 
 macOS: brew install redis
@@ -122,6 +124,7 @@ Start Redis server:
 redis-server
 
 4. 🛠 Backend Setup
+
 cd backend
 cp .env.example .env   # Create your own .env file
  Edit .env with:
