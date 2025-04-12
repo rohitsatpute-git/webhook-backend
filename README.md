@@ -100,6 +100,8 @@ Use the React UI to sign up, login, and subscribe
 ## Author 👨‍💻
 
 Rohit Satpute
+
 📫 LinkedIn
+
 🌐 Portfolio
 
