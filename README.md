@@ -68,25 +68,6 @@ Simple, schema-flexible document store for subscriptions and events
 
 Easy to relate events to users and sources
 
-## Project Structure ⚙️
-
-bash
-Copy
-Edit
-.
-├── backend
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   ├── jobs
-│   └── index.js
-├── frontend
-│   ├── src
-│   │   ├── components
-│   │   ├── pages
-│   │   └── App.jsx
-├── simulate-webhook.js
-├── README.md
 🧪 Simulating Webhooks
 Use the provided script to simulate an external service sending a webhook:
 
