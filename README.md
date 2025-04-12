@@ -87,17 +87,51 @@ Retry: Add email alerts on repeated failures
 
 ## Setup Instructions 🛠
 
-1.Clone the repo
+Clone the repo
   git clone https://github.com/your-username/webhook-system.git](https://github.com/rohitsatpute-git/webhook-backend.git
   cd webhook-backend
 
-Start MongoDB and Redis locally
+2. 🗄️ Setup MongoDB
+Option 1: Local MongoDB
 
-cd backend && npm install && npm run dev
+Install MongoDB from: https://www.mongodb.com/try/download/community
 
-cd frontend && npm install && npm run dev
+Start the MongoDB service:
+mongod
 
-Use the React UI to sign up, login, and subscribe
+Option 2: MongoDB Atlas (Cloud)
+
+Sign up at https://www.mongodb.com/cloud/atlas
+
+Create a cluster and database
+
+Add your IP to the network access list
+
+Get your connection string and update the .env file in /backend
+
+3. 🔁 Setup Redis (For Retry Queue)
+Install Redis:
+
+macOS: brew install redis
+
+Ubuntu: sudo apt install redis
+
+Windows: Use WSL or install Redis from https://github.com/microsoftarchive/redis/releases
+
+Start Redis server:
+redis-server
+
+4. 🛠 Backend Setup
+cd backend
+cp .env.example .env   # Create your own .env file
+# Edit .env with:
+# MONGODB_URI=
+# JWT_SECRET=
+
+npm install
+npm i mongoose dotenv jsonwebtoken express bcrypt axios bullmq cors http ioredis socket.io
+npx nodemon
+
 
 ## Author 👨‍💻
 
