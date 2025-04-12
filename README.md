@@ -12,6 +12,7 @@ Queue System	BullMQ + Redis
 
 ## Features 📦
 ✅ Backend (Express.js + MongoDB)
+
 User Signup/Login with JWT Auth
 
 Subscribe to webhook services (source + callback URL)
@@ -25,6 +26,7 @@ Cancel subscriptions
 Real-time event delivery via Socket.io
 
 ✅ Frontend (React.js)
+
 Signup/Login interface
 
 Dashboard to subscribe/unsubscribe to services
@@ -34,6 +36,7 @@ View live event logs via Socket.io
 Auth-protected routes
 
 ## Architecture & Design Choices 🧱
+
 1. Modular Service Layers
 Organized code into /routes, /controllers, /models, and /jobs
 
@@ -66,6 +69,7 @@ Simple, schema-flexible document store for subscriptions and events
 Easy to relate events to users and sources
 
 ## Project Structure ⚙️
+
 bash
 Copy
 Edit
@@ -91,6 +95,7 @@ Copy
 Edit
 node simulate-webhook.js
 ## Future Improvements 🧼
+
 UI: Add filters/sorting to event log
 
 DB: Add TTL/index cleanup for old events
@@ -100,6 +105,7 @@ Security: Validate callback URLs before accepting
 Retry: Add email alerts on repeated failures
 
 ## Setup Instructions 🛠
+
 Clone the repo
 
 Start MongoDB and Redis locally
@@ -111,6 +117,7 @@ cd frontend && npm install && npm run dev
 Use the React UI to sign up, login, and subscribe
 
 ## Author 👨‍💻
+
 Rohit Satpute
 📫 LinkedIn
 🌐 Portfolio
