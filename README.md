@@ -2,7 +2,7 @@
 
 This project allows users to subscribe to webhook services, and handles incoming webhook events with retry logic, authentication, and real-time event streaming.
 
-🚀 Tech Stack
+🚀 ## Tech Stack
 Layer	Technology
 Frontend	React.js (Vite)
 Backend	Node.js with Express + MongoDB
