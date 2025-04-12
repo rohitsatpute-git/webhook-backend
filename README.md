@@ -87,7 +87,9 @@ Retry: Add email alerts on repeated failures
 
 ## Setup Instructions 🛠
 
-Clone the repo
+1.Clone the repo
+  git clone https://github.com/your-username/webhook-system.git](https://github.com/rohitsatpute-git/webhook-backend.git
+  cd webhook-backend
 
 Start MongoDB and Redis locally
 
