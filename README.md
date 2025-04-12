@@ -130,6 +130,7 @@ MONGODB_URI=
 
 npm install
 npm i mongoose dotenv jsonwebtoken express bcrypt axios bullmq cors http ioredis socket.io
+
 npx nodemon
 
 
