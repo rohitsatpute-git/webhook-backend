@@ -95,23 +95,7 @@ Clone the repo
 
 2. 🗄️ Setup MongoDB
 
-Option 1: Local MongoDB
-
-Install MongoDB from: https://www.mongodb.com/try/download/community
-
-Start the MongoDB service:
-
-mongod
-
-Option 2: MongoDB Atlas (Cloud)
-
-Sign up at https://www.mongodb.com/cloud/atlas
-
-Create a cluster and database
-
-Add your IP to the network access list
-
-Get your connection string and update the .env file in /backend
+Add MONGO_URI in .env file ( local or cloud )
 
 3. 🔁 Setup Redis (For Retry Queue)
 
@@ -130,14 +114,9 @@ redis-server
 4. 🛠 Backend Setup
 
 cd backend
-
-cp .env.example .env   
-
- Edit .env with:
-
 MONGODB_URI=
 
- JWT_SECRET=
+JWT_SECRET=
 
 npm install
 
@@ -145,13 +124,13 @@ npm i mongoose dotenv jsonwebtoken express bcrypt axios bullmq cors http ioredis
 
 npx nodemon
 
-5. Start the Worker
+5. Start the Worker Job
 
-  node jobs/Workers/retryWorker.js
+node jobs/Workers/retryWorker.js
 
 6.Simulation
 
- node simulate-webhooks.js
+node simulate-webhooks.js
    
 
 ## Author 👨‍💻
